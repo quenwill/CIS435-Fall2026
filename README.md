@@ -26,21 +26,26 @@ DesireLand is a fictional island destination featuring scenic views, travel pack
 - CSS gradients and custom color variables
 - Hover effects on interactive elements
 
-### Screenshots of website on different widths:
+## Screenshots of website on different widths
 
-#### Desktop (1440 px)
+### Desktop (1440 px)
 
-![Desktop view - top](DesireLand Screenshots/Desktop Width 1.png)
-![Desktop view - middle](DesireLand Screenshots/Desktop Width 2.png)
-![Desktop view - bottom](DesireLand Screenshots/Desktop Width 3.png)
+![Desktop view - top](DesireLand%20Screenshots/Desktop%20Width%201.png)
 
-#### Tablet (800 px)
+![Desktop view - middle](DesireLand%20Screenshots/Desktop%20Width%202.png)
 
-![Tablet view - top](DesireLand Screenshots/Tablet Width 1.png)
-![Tablet view - bottom](DesireLand Screenshots/Tablet Width 2.png)
+![Desktop view - bottom](DesireLand%20Screenshots/Desktop%20Width%203.png)
 
-#### Mobile (390 px)
+### Tablet (800 px)
 
-![Mobile view - top](DesireLand Screenshots/Mobile Width 1.png)
-![Mobile view - middle](DesireLand Screenshots/Mobile Width 2.png)
-![Mobile view - bottom](DesireLand Screenshots/Mobile Width 3.png)
+![Tablet view - top](DesireLand%20Screenshots/Tablet%20Width%201.png)
+
+![Tablet view - bottom](DesireLand%20Screenshots/Tablet%20Width%202.png)
+
+### Mobile (390 px)
+
+![Mobile view - top](DesireLand%20Screenshots/Mobile%20Width%201.png)
+
+![Mobile view - middle](DesireLand%20Screenshots/Mobile%20Width%202.png)
+
+![Mobile view - bottom](DesireLand%20Screenshots/Mobile%20Width%203.png)
