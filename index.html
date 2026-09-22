@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Brochure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <header>
+        <h1>Welcome to DesireLand</h1>
+        <p>Where your heart's desires are a reality.</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#packages">Packages</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section id="about">
+
+            <div>
+                <h2>About DesireLand</h2>
+
+                <p>
+                    Discover a destination that holds your heart's wildest dreams
+                    on a secreted island with the purest shores leading to a place
+                    abounding in vibrant nature, days and nights full of peace and fun,
+                    and no traces of the world's concerns.
+                </p>
+            </div>
+
+            <img src="images/DesireLand.jpg" alt="Spectacular scenic picture of DesireLand">
+
+        </section>
+
+        <section id="packages">
+            <h2>Travel Packages</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Package</th>
+                            <th>Duration</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Chocolate Boat Fiesta</td>
+                            <td>1 Lifelong Night Experience</td>
+                            <td>$143 in love's currency</td>
+                        </tr>
+
+                        <tr>
+                            <td>Blue Ocean Drift</td>
+                            <td>1 Lifelong Day Experience</td>
+                            <td>$143 in love's currency</td>
+                        </tr>
+
+                        <tr>
+                            <td>External Mix Flow</td>
+                            <td>1 Lifelong Experience</td>
+                            <td>$143 in love's currency</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <section id="contact">
+
+            <div>
+                <h2>Contact Us To Transcend</h2>
+            </div>
+
+            <form>
+
+                <div>
+                    <label for="first-name">First name:</label>
+                    <input type="text" id="first-name" name="first-name">
+                </div>
+
+                <div>
+                    <label for="last-name">Last name:</label>
+                    <input type="text" id="last-name" name="last-name">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div>
+                    <label for="package">Select Your Desired Package:</label>
+                    <select id="package" name="package">
+                        <option value="fiesta">Chocolate Boat Fiesta</option>
+                        <option value="drift">Blue Ocean Drift</option>
+                        <option value="flow">External Mix Flow</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Have comments? Share them below.</label>
+                    <br>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DesireLand Travel Brochure</p>
+    </footer>
+
+</body>
+</html>
