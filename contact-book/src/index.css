@@ -1,0 +1,66 @@
+
+/* The following establishes the default appearance and 
+behavior of this application.*/
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #243247;
+  background: #f4f6fa;
+
+  /* The following section improves text rendering and was 
+  implemented on behalf of textbook instruction and the following site:
+   https://css-tricks.com/almanac/properties/t/text-rendering/*/ 
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  /* Brand Colors */
+  --primary-color: #0c65eb;
+  --primary-dark: #084db5;
+  --light-blue: #eaf2ff;
+
+  /* Text Colors */
+  --text-color: #243247;
+  --muted-color: #526985;
+
+  /* Foundation Colors */
+  --background-color: #f4f6fa;
+  --white: #ffffff;
+
+  /* Context colors: Used to distinguish borders from 
+  one another and highlight errors. */
+  --border-color: #dce2ea;
+  --danger-color: #fb1c03;
+}
+
+* {
+  /* The following line implements padding and borders within an element.*/
+  box-sizing: border-box;
+}
+
+/* The following section establishes my page baselines. */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* The following section ensures added buttons reflect the 
+established typography. */
+button,
+input {
+  font: inherit;
+}
+
+/* The following envokes a pointer cursor over buttons when 
+the user is hovering over them.*/
+button {
+  cursor: pointer;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: 3px solid #8bb9e8;
+  outline-offset: 2px;
+}
+

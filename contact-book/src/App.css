@@ -1,0 +1,267 @@
+/* Main Application Layout to establish the page structure.*/
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* The following Header section stypes the header section at the top
+that introduces the user to the application. */
+
+.app-header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 28px 20px;
+}
+
+.header-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.brand h1 {
+  font-size: 26px;
+  margin: 0;
+}
+
+.header-content p {
+  color: var(--light-blue);
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+
+/* The following section formulates the two-column 
+layout I implemented. */
+
+.main-content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  flex: 1;
+}
+
+/* The following section creates "containers" within 
+the two-columns implemented. */
+
+.contact-form-section,
+.contact-list-section {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* The following section ensures all the header styles 
+will remain consistent across the application. */
+.section-heading h2 {
+  margin: 0 0 8px;
+  color: var(--primary-dark);
+  font-size: 21px;
+}
+
+.section-heading p {
+  color: var(--muted-color);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* The following sections formulate the input and search
+fields users will use to be consistent with the application design. */
+
+.contact-form,
+.search-bar {
+  margin-top: 24px;
+}
+
+.form-group,
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.form-group label,
+.search-bar label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.form-group input,
+.search-bar input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 7px;
+  background-color: var(--white);
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+/* The following section highlights an input when the user selects it. */
+.form-group input:focus,
+.search-bar input:focus {
+  border-color: var(--primary-color);
+  outline: 2px solid var(--light-blue);
+}
+
+/* The following implements buttons from the normal text on the page. */
+
+/* This section speaks to the form's submit button. */
+.add-contact-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 7px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+/* This section specifically darkens the primary button
+when the user hovers over it.*/
+.add-contact-button:hover {
+  background-color: var(--primary-dark);
+}
+
+/* The following section speaks to the button that removes a contact.*/
+.delete-contact-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #fff0ed;
+  color: var(--danger-color);
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+/* This section specifically darkens the button
+when the user hovers over it.*/
+.delete-contact-button:hover {
+  background-color: #ffe0da;
+}
+
+/* This Contact List and Cards section organizes the saved contacts into
+individual card-like sections with their individual information. */
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+/* The following positions the contact details and the delete button
+within each card-like section.*/
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 9px;
+  background-color: var(--white);
+}
+
+/* The following ensures long information from user input 
+remains within the card-like layout. */
+.contact-details {
+  min-width: 0;
+}
+
+.contact-details h3 {
+  margin: 0 0 7px;
+  color: var(--primary-dark);
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+
+.contact-details p {
+  margin: 4px 0;
+  color: var(--muted-color);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+/* The following establishes the messages displayed to users when 
+their contact list is empty or has no matches with their searched term. */
+
+.empty-state {
+  text-align: center;
+  padding: 45px 10px;
+}
+
+.empty-state h3 {
+  color: var(--primary-dark);
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  color: var(--muted-color);
+  font-size: 14px;
+}
+
+/* The Footer section below styles the application's footer.*/
+
+.app-footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--muted-color);
+  font-size: 13px;
+}
+
+/* The following implements a Responsive Layout that ensures
+the application automatically adjusts to the user's device screen size
+ while maintaining the application layout. */
+
+ /* The following stacks the form and contact list vertically 
+ on taller screens.*/
+@media (max-width: 700px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    margin: 24px auto;
+    padding: 0 16px;
+  }
+
+  /* The following reduces section padding to take advantage of 
+  available screen space.*/
+  .contact-form-section,
+  .contact-list-section {
+    padding: 20px;
+  }
+
+  .brand h1 {
+    font-size: 23px;
+  }
+}
+
+/* The following adjusts the card-like contact sections to accomodate
+ vertically, taller screens.*/
+@media (max-width: 400px) {
+  .contact-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  /* The following ensures the delete button remains aligned within the card.*/
+  .delete-contact-button {
+    align-self: flex-end;
+  }
+}
+
